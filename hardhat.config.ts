@@ -6,6 +6,11 @@ import "./tasks/namespace-slot";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.22",
+  networks: {
+    hardhat: {
+      allowUnlimitedContractSize: true,
+    },
+  },
 };
 
 export default config;
