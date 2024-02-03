@@ -1,0 +1,14 @@
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .2rem;
+  }
+}

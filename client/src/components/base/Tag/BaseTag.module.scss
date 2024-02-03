@@ -1,0 +1,26 @@
+@use '@/styles/_color.scss' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-small {
+  width: 2.5rem;
+  height: 1.5rem;  
+}
+
+.container-regular {
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.container-large {
+  width: 3.2rem;
+  height: 1.5rem;
+}
+
+.container-primary-1 {
+  background-color: $light-priamry-1;
+}

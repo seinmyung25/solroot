@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin: 40px auto 20px auto;
+
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 12px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(51, 51, 51, 0.2);
+    }
+
+    .icon {
+      transition: all ease-in-out 0.3s;
+    }
+
+    .icon-open {
+      transform: rotate(0deg);
+    }
+
+    .icon-close {
+      transform: rotate(180deg);
+    }
+  }
+
+  .body {
+    margin-top: 5px;
+    background-color: rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+
+    .inputsContainer {
+      margin-bottom: 10px;
+    }
+  }
+}

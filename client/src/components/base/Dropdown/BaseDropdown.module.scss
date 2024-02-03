@@ -1,0 +1,28 @@
+@use "@/styles/_color.scss" as*;
+
+.container {
+  width: 100%;
+  height: 3rem;
+  max-width: 200px;
+
+  .header {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $light-gray-4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+    font-family: consolas;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .body {
+    width: 100%;
+    z-index: 99;
+    border-radius: 10px;
+  }
+}
