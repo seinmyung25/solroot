@@ -1,0 +1,44 @@
+@use '@/styles/_color.scss' as *;
+
+.elementContainer {
+  position: relative;
+  width: 100%;
+  background-color: $light-1;
+  height: 3rem;
+  z-index: 40;
+
+  .element {
+    width: 100%;
+    height: 100%;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eee;
+    }
+
+    .address {
+      font-family: consolas;
+    }
+
+    .type {
+      color: $text-1;
+      font-size: 12px;
+      font-weight: 200;
+      margin-left: .5rem;
+    }
+  }
+  .clipboard {
+    position: absolute;
+    top: 50%;
+    right: -0.5rem;
+    transform: translate(100%, -50%);
+    transition: all linear .2s;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

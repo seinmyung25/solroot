@@ -1,0 +1,68 @@
+@use '@/styles/_color.scss' as *;
+
+.container {
+  position: relative;
+  background-color: $light-2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  border: 2px solid $light-gray-2;
+  max-width: 1200px;
+  border-radius: 20px;
+
+  .textContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .title {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .address {
+      font-size: 16px;
+      font-weight: 400;
+      color: $text-1;
+      display: flex;
+      align-items: center;
+      font-family: consolas;
+
+      .clipboard {
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .bodyContainer {
+    width: 100%;
+    height: 30rem;
+    margin: .5rem 0;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .btnContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+    border-radius: 5px;
+  }
+
+  .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+  }
+}

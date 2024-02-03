@@ -1,0 +1,19 @@
+@use '@/styles/_color.scss' as *;
+
+.container {
+  position: absolute;
+  height: 7rem;
+  width: 100%;
+  background-color: $light-1;
+  border: 1px solid $light-gray-3;
+  border-radius: 5px;
+  overflow-y: scroll;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  z-index: 30;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
