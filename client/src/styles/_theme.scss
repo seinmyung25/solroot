@@ -1,0 +1,43 @@
+@use "@/styles/_color.scss" as *;
+
+html[data-theme="light"] {
+  --primary-1: #{$light-primary-1};
+  --primary-2: #{$light-primary-2};
+  --primary-3: #{$light-primary-3};
+  --primary-4: #{$light-primary-4};
+  --primary-5: #{$light-primary-5};
+
+  --dark-1: #{$dark-1};
+  --dark-2: #{$dark-2};
+  --light-1: #{$light-1};
+  --light-2: #{$light-2};
+
+  --background-1: #{$light-background-1};
+  --background-2: #{$light-background-2};
+
+  --gray-1: #{$light-gray-1};
+  --gray-2: #{$light-gray-2};
+  --gray-3: #{$light-gray-3};
+  --gray-4: #{$light-gray-4};
+}
+  
+html[data-theme="dark"] {
+  --primary-1: #{$dark-primary-1};
+  --primary-2: #{$dark-primary-2};
+  --primary-3: #{$dark-primary-3};
+  --primary-4: #{$dark-primary-4};
+  --primary-5: #{$dark-primary-5};
+  
+  --background-1: #{$dark-background-1};
+  --background-2: #{$dark-background-2};
+
+  --dark-1: #{$light-1};
+  --dark-2: #{$light-2};
+  --light-1: #{$dark-1};
+  --light-2: #{$dark-2};
+
+  --gray-1: #{$dark-gray-1};
+  --gray-2: #{$dark-gray-2};
+  --gray-3: #{$dark-gray-3};
+  --gray-4: #{$dark-gray-4};
+}
