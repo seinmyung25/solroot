@@ -1,0 +1,65 @@
+@use '@/styles/_color.scss' as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  .navContainer {
+    position: relative;
+    min-width: 220px;
+    height: 500px;
+    margin-right: 1rem;
+    overflow-y: scroll;
+    direction: rtl; /* css scrollbar left */
+
+    .btnContainer {
+      width: auto;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-left: 1.5rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $light-2;
+      }
+    }
+  }
+
+  .toggleContainer {
+    position: absolute;
+    height: 3rem;
+    width: 20rem;
+    top: 0;
+    right: 0;
+    transform: translate(-15px, -32px);
+    background-color: $light-1;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #888888;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .toggleBtn {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .toggleBtn-active {
+      font-weight: 600;
+      background-color: $light-2;
+    }
+  }
+}

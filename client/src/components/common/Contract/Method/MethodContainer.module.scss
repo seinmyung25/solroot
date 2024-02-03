@@ -1,0 +1,68 @@
+@use '@/styles/_color.scss' as *;
+
+.container {
+  position: relative;
+  background-color: $light-2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-grow: 1;
+  border: 2px solid $light-gray-2;
+  max-width: 1200px;
+  border-radius: 20px;
+
+  .textContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .title {
+      font-size: 17px;
+      font-weight: 600;
+
+      .mutability {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-1;
+        margin-left: 5px;
+      }
+    }
+
+    .address {
+      font-size: 16px;
+      font-weight: 400;
+      color: $text-1;
+      display: flex;
+      align-items: center;
+      font-family: consolas;
+
+      .clipboard {
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .bodyContainer {
+    margin-right: 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .btnContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(20px, -20px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btnInner {
+      margin: 0 .5rem;
+    }
+  }
+}
