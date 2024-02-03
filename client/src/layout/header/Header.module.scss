@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  background-color: var(--light-1);
+
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .buttonContainer {
+      height: 8rem;
+      border: 1px solid var(--gray-2);
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(-1.5px);
+      }
+    }
+  }
+}
