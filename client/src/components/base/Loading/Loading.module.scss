@@ -1,0 +1,22 @@
+@use "@/styles/_color.scss" as *;
+
+.container-full {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 30);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  .msgContainer {
+    margin-top: 2rem;
+    font-size: 17px;
+    color: $dark-1;
+    font-weight: 600;
+  }
+}

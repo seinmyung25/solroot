@@ -1,0 +1,104 @@
+@use '@/styles/_theme.scss' as *;
+@use '@/styles/_color.scss' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.container-small {
+  min-width: 8rem;
+  padding: 3.5px 1rem;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.container-regular {
+  min-width: 10rem;
+  padding: 5px 2rem;
+  font-size: 15px;
+}
+
+.container-large {
+  min-width: 12rem;
+  padding: 7px 3rem;
+  font-size: 17px;
+}
+
+.container-primary-1 {
+  border: 2px solid $light-primary-1;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $light-primary-1;
+
+  &:hover {
+    background-color: $light-primary-1;
+    color: #fff;
+  }
+}
+
+.container-primary-2 {
+  border: 2px solid $light-primary-2;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $light-primary-1;
+
+  &:hover {
+    background-color: $light-primary-2;
+    color: #fff;
+  }
+}
+
+.container-primary-3 {
+  border: 2px solid $light-primary-2;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $light-primary-1;
+
+  &:hover {
+    background-color: $light-primary-2;
+    color: #fff;
+  }
+}
+
+.container-primary-4 {
+  border: 2px solid $light-primary-4;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $light-primary-2;
+
+  &:hover {
+    background-color: $light-primary-4;
+    color: #fff;
+  }
+}
+
+.container-primary-5 {
+  border: 2px solid $light-primary-5;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $light-primary-3;
+
+  &:hover {
+    background-color: $light-primary-5;
+    color: #fff;
+  }
+}
+
+.container-dark {
+  border: 1px solid $text-1;
+  background-color: #fff;
+  transition: all linear .2s;
+  color: $text-1;
+
+  &:hover {
+    border: 1px solid $light-gray-4;
+    color: $light-gray-4;
+  }
+}
